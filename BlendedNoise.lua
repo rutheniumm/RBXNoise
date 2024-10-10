@@ -64,6 +64,6 @@ function BlendedNoise:sample(x, y, z)
         end
         factor = factor / 2
     end
-    return Math.clampedLerp(min / 512, max / 512, value) / 128
+    return Utils.clampedLerp(min / 512, max / 512, value) / 128
 end
 return BlendedNoise
